@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!--Bootstrap CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--jQuery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--CSS Link-->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Food Ninja</title>
+</head>
+<body>
+    
+    <!--First page/Launch logo screen-->
+    <section class="container page-1" id="pages-1">
+        <div class="card">
+            <div class="card-body">
+                <img class="logo" src="images/Logo.png">
+                
+            </div>
+        </div>
+    </section>
+
+    <!--Second page-->
+    <section class="container page-2" id="pages-2" style="display: none;">
+        <div class="card">
+            <div class="card-body text-center">
+                <img class="illustration-2-3" src="images/Illustartion.png">
+                
+                <p class="page-2-3-heading">Find your Comfort <br> Food here</p>
+                <p class="page-2-3-sub-heading">Here You Can find a chef or dish for every <br> taste and color.Enjoy!</p>
+
+                <button class="next-btn-1" id="next-btn-1">Next</button>
+            </div>
+        </div>
+    </section> 
+
+    <!--Third page -->
+    <section class="container page-3" id="pages-3" style="display: none;">
+        <div class="card">
+            <div class="card-body">
+                <img class="illustration-2-3" src="images/page-3-Illustration.png">
+                
+                <p class="page-2-3-heading lead">Food Ninja is Where Your <br>Comfort Food Lives</p>
+                <p class="page-2-3-sub-heading">Enjoy a fast and smooth food delivery at<br> your doorstep</p>
+
+                <a class="next-btn-2" id="next-btn-2" href="login.html">Next</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--over 600px Error msg-->
+    <section class="screen-size-error">
+        <p class="error-msg">Please Use a device with mobile screen size(within 600px).<br>This Website is only available for mobile screen devices.</p>
+    </section>
+
+
+    <!--Javascript/jQuery-->
+
+    <script type="text/javascript">
+
+        /****************Launch screen page JS code*********************/
+           /* const page_1 = document.querySelector('.page-1');
+        
+            document.addEventListener('DOMContentLoaded',(e)=>{
+                setTimeout( ()=>{
+                    page_1.classList.add('display-none');
+                },1500);
+            });*/
+        
+        /**********On Next Button click event**********/
+            $(document).ready(function() {
+                setTimeout(function(){
+                    $("#pages-1").hide();
+                    $("#pages-2").show();
+                }, 2000);
+        
+            $("#next-btn-1").click(function() {
+                $("#pages-2").hide();
+                    $("#pages-3").show();
+                  });
+                      
+                });
+
+    </script>
+</body>
+</html>
+

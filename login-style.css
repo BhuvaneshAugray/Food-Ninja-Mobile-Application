@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    font-family: 'poppins',sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    max-width: 600px;
+}
+
+
+.card{
+    border-radius: 20px;
+    height: 100vh;
+    border: none;
+    box-sizing: border-box;
+}
+
+.card-body{
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    background-image:url(images/login-lllustration.png);
+    text-align: center;
+}
+
+.logo{
+    margin-top: 30px;
+}
+
+.heading{
+    margin-top:20px;
+    font-size: 25px;
+    font-weight: 500;
+    font-style: bold;
+}
+
+.input-field input{
+    border: none;
+    margin-bottom: 20px;
+    padding:12px 50px 12px 30px;
+    border-radius:15px;
+    background-color: #fff;
+    box-shadow: 5px 5px 20px rgb(212, 225, 238);
+    width: 325px;
+    height: 60px;
+    
+}
+
+
+.continue{
+    font-weight: 600;
+}
+.social-icons button{
+    background-color: #fff;
+    width: 150px;
+    height: 60px;
+    padding: 5px 5px 5px 30px;
+    border-radius: 10px;
+    border:none;
+    box-shadow: 5px 5px 20px rgb(212, 225, 238);
+    position: relative;
+    font-weight: 600;
+}
+
+.social-icons .fb-icon{
+    position: absolute;
+    left:12px;
+}
+
+.social-icons .g-icon{
+    position: absolute;
+    left: 17px;
+}
+
+.social-icons .fb-btn{
+    margin-right: 5px;
+}
+
+.social-icons .g-btn{
+    margin-left: 5px;
+}
+
+.forgot{
+    margin-top: 15px;
+    font-weight: 500;
+    color:rgb(100, 224, 100);
+    margin-bottom: 40px;
+}
+
+.login-btn{
+    box-sizing:border-box;
+    width: 150px;
+    height: 60px;
+    padding: 15px 50px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(100, 224, 100);
+    
+
+}
+
+.login-btn a{
+    text-decoration: none;
+    color:#fff;
+    font-weight: 800;
+
+}
+
+/********media queries********/
+
+@media screen and (min-width: 600px) {
+    body{
+        position: relative;
+    }
+    .screen-size-error{
+        padding: 50px;
+        text-align: center;
+        position: absolute;
+        z-index: 200;
+        width: 100vw;
+        height: 100vh;
+        background: rgb(254 248 223);
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .error-msg{
+        color: #F89945;
+        font-size: 30px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .screen-size-error{
+        display: none;
+    }
+}

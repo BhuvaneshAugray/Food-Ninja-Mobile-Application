@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!--Bootstrap CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="login-style.css">
+    <title>Login page</title>
+</head>
+<body>
+
+    <!--************Login Page************-->
+    
+    <section class="container login-page" id="login-page">
+        <div class="card">
+            <div class="card-body">
+                <img class="logo" src="images/Logo.png" alt="">
+
+                <p class="heading">Login To Your Account</p>
+
+                <div class="input-field">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                </div>
+
+                <p class="continue">Or Continue With</p>
+
+                <div class="social-icons">
+                    <button class="social fb-btn"><img src="images/facebook.png" class="fb-icon"><span>Facebook</span></button>
+                    <button class="social g-btn"><img src="images/google.png" class="g-icon"><span>Google</span></button>                 
+                </div>
+
+                <p class="forgot">Forgot Your Password?</p>
+
+                <button class="login-btn" id="login-button"><a href="homepage.html">Login</a> </button>
+                
+            </div>
+        </div>
+    </section>
+
+    <!--********Error Message*********-->
+
+    <section class="screen-size-error">
+        <p class="error-msg">Please Use a device with mobile screen size(within 600px).<br>This Website is only available for mobile screen devices.</p>
+    </section>
+
+
+
+
+
+
+    <!--**********Javascript***********-->
+
+    <script type="text/javascript">
+
+    $("#login-button").click(function() {
+        $("#login-page").hide()
+          });
+
+    </script>
+</body>
+</html>
